@@ -1,0 +1,127 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 2rem 5%;
+    background-color: #f1f2f6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow:0 .5rem 1rem  rgba(0, 0, 0, 0.1);
+    z-index: 99;
+}
+
+.header .logo{
+    width: 10rem;
+}
+
+.header .logo img{
+    width: 100%;
+}
+
+.header .navbar ul{
+    display: flex;
+}
+
+.header .navbar ul li{
+    margin: .7rem;
+}
+
+.header .navbar ul li a{
+    font-size: 2rem;
+    font-family: var(--font-Baloo);
+    padding: .4rem .8rem;
+    transition: .4s ease-in-out;
+}
+
+.header .navbar ul li a:hover{
+    padding: .8rem;
+    background-color: #D2BAFB;
+    border-radius: .4rem;
+    font-size: 2.2rem;
+}
+
+.imagem{
+    display: none;
+}
+
+.secao-carrosel{
+    background: lightgrey;
+    position: relative;
+    min-height: 50vh;
+}
+
+.secao-carrosel .imagem.ativo{
+    display: block;
+    width: 100%;
+}
+
+.seta{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 45%;
+}
+
+.esquerda{
+    left: 20px;
+    transform: rotateY(180deg);
+}
+
+.direita{
+    right: 20px;
+}
+
+
+.Sobre-o-Museu{
+    text-align: center;
+    margin: 25px;
+}
+
+.Sobre-o-Museu .titulo{
+    font-size: 40px;
+    padding-bottom: 15px;
+    font-family: var(--font-Baloo);
+    color: #854ee6;
+    position: relative;
+}
+
+.Sobre-o-Museu .titulo::after{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 150px;
+    background: #854ee6;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Sobre-o-Museu .descricao{
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: var(--font-Baloo);
+}
+
+.rodape{
+    border-top: 1.5px solid #854ee6;
+    padding: 15px;
+    margin: 0 15px;
+}
+
+.rodape .redes-sociais{
+    border-radius: 50%;
+    text-align: center;
+}
+
+.rodape .redes-sociais a i{
+    font-size: 25px;
+    color: #854ee6;
+    padding: 0 12px;
+}
